@@ -31,7 +31,6 @@ public class MyApplicationContext {
         refresh();
     }
 
-
     public void refresh() {
         parser = new MyBeanDefinitionParser(configLocation);
         doRegisty(parser.getRegistyClassNames());
