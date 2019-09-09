@@ -13,7 +13,7 @@ import java.util.Map;
  * 处理请求
  */
 public class MyHandlerAdapter {
-    private List<String> params;
+    private final List<String> params;
 
     public MyHandlerAdapter(List<String> params) {
         this.params = params;
