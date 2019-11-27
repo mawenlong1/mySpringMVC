@@ -47,7 +47,7 @@ public class MyApplicationContext {
                     if (field.isAnnotationPresent(MyAutowired.class)) {
                         String autowiredBeanName =
                                 field.getAnnotation(MyAutowired.class).value().trim();
-                        if ("".equals(autowiredBeanName)) {
+                        if (autowiredBeanName.length() == 0) {
                             autowiredBeanName = field.getType().getName();
                         }
                         field.setAccessible(true);
