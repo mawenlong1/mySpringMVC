@@ -15,7 +15,7 @@ import java.util.Properties;
 public class MyBeanDefinitionParser {
     private Properties config = new Properties();
     private List<String> registyClassNames = new ArrayList<String>();
-    //扫描的包的key
+    // 扫描的包的key
     private static final String SCAN_PACKAGE = "scanPackage";
 
     public MyBeanDefinitionParser(String location) {
