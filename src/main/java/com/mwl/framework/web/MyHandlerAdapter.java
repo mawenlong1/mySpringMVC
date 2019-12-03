@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author mawenlong
  * @date 2019/05/06
- *
+ * <p>
  * 处理请求
  */
 public class MyHandlerAdapter {
@@ -21,7 +21,7 @@ public class MyHandlerAdapter {
 
 
     public void handle(HttpServletRequest request, HttpServletResponse response,
-                         MyHandlerMapping handler) throws Exception {
+                       MyHandlerMapping handler) throws Exception {
 
         Class<?>[] paramTypes = handler.getMethod().getParameterTypes();
         Object[] paramValues = new Object[paramTypes.length];
@@ -57,6 +57,9 @@ public class MyHandlerAdapter {
         }
     }
 
+    /**
+     * 暂未实现
+     */
     public long getLastModified(HttpServletRequest request, Object handler) {
         return -1;
     }
