@@ -47,7 +47,7 @@ public class MyHandlerAdapter {
         System.out.println(result);
     }
 
-    private Object castString(String value, Class<?> clazz) {
+    private static Object castString(String value, Class<?> clazz) {
         if (clazz == String.class) {
             return value;
         } else if (clazz == Integer.class || clazz == int.class) {
